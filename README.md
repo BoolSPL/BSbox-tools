@@ -1,6 +1,6 @@
-# BSbox-tools: Software for representation, deﬁning and computing the most important cryptographic properties of Boolean and Vector Boolean functions (S-boxes)
+# BSbox-tools: Software for study Boolean and Vector Boolean functions (S-boxes)
 
-BSbox-tools is a tool for study cryptographic properties of Boolean and Vector Boolean functions (S-boxes).
+BSbox-tools is open source tool for representation, defining and computing the most important cryptographic properties of Boolean and Vector Boolean functions (S-boxes).
 
 #### Current release: v0.2
 
@@ -17,3 +17,7 @@ BSbox-tools is developed software for representation, defining and computing the
  BSbox-tools is specialized console application program for representation, deﬁning and computing the most important cryptographic properties of Boolean and Vector Boolean functions (S-boxes). With other words BSbox-tools represents a console interface program on the BoolSPL library. The version BSbox-tools_v0.2 is based on BoolSPL_v0.2 library version. This application combines CPU and GPU functionality.
 
 On figure 1 is show main menu of BSbox-tools console interface program. How we can see it is given some information about the program as current version, minimal requires compute capability, notification if minimal requires are fulfilled. After initial information their info about input and output files and then follows menu with the options. 
+
+![header image](https://github.com/BoolSPL/BSbox-tools/tree/master/Images/BSbox-tools1.jpg)
+
+##### Figure 1. Main menu of "BSbox-tools {Main menu GPU - CPU}" console interface program
