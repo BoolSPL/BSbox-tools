@@ -18,6 +18,6 @@ BSbox-tools is developed software for representation, defining and computing the
 
 On figure 1 is show main menu of BSbox-tools console interface program. How we can see it is given some information about the program as current version, minimal requires compute capability, notification if minimal requires are fulfilled. After initial information their info about input and output files and then follows menu with the options. 
 
-![header image](https://github.com/BoolSPL/BSbox-tools/tree/master/Images/BSbox-tools1.jpg)
+![header image](https://github.com/BoolSPL/BSbox-tools/blob/master/Images/BSbox-tools1.jpg)
 
 ##### Figure 1. Main menu of "BSbox-tools {Main menu GPU - CPU}" console interface program
