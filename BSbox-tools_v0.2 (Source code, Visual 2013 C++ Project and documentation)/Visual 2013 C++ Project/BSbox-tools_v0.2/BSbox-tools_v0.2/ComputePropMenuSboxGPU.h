@@ -1,0 +1,215 @@
+//Header file for Compute cryptographic properties (GPU) of Boolean function
+
+//@@System includes
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+
+void GPU_SboxMenu(void) {
+
+	printf("\n         BSbox-tools {S-box(es) (GPU)} \n");
+	cout << "\n Compute cryptographic properties of S-box(es)\n";
+
+	cout << "\n\n'" << infile_exampl << "' -> '" << outfile_exampl << "'\n\n";
+
+	cout << "  1. Compute Linear Approximation Table of S-box(es): LAT(S) \n";
+	cout << "  2. Linearity: Lin(S) \n";
+	cout << "  3. Compute Linear Approximation Table and Linearity: LAT(S), Lin(S) \n";
+	cout << "  4. Nonlinearity: nl(S) \n";
+	cout << "  5. Autocorrelation Spectra: ACT(S) \n";
+	cout << "  6. Autocorrelation: AC(S) \n";
+	cout << "  7. Compute Autocorrelation spectar and Autocorrelation: ACT(S), AC(S) \n";
+	cout << "  8. Compute Algebraic Normal Form of input S-box(es) \n";
+	cout << "  9. Algebraic degree: deg(S) \n\n";
+
+	cout << "  10. Compute (bitwise) Algebraic Normal Form of input S-box(es) \n";
+	cout << "  11. (bitwise) Algebraic degree: deg(S) \n\n";
+
+	cout << "  12. Compute Component functions: CF(S) \n";
+	cout << "  13. Compute Difference distribution table: DDT(S)  \n";
+	cout << "  14. Compute Differential uniformity: delta(S) \n\n";
+
+	cout << "  15. Show infilename: '" << infile_exampl << "' \n";
+	cout << "  16. Show outfilename: '" << outfile_exampl << "' \n\n";
+
+	cout << "  17. Back: Main menu \n";
+	cout << "\n Please choose: ";
+
+	cin >> choice2;
+	input(choice2);
+
+	//Checking input value is an integer
+	//choice2 = checkInput(choice2);
+	choice2 = checkInput(choice2, 1, 17);
+}
+
+void GPU_Sbox(void) {
+
+	do {
+		GPU_SboxMenu();
+
+		switch (choice2){
+
+		case 1:
+			cout << "\n==========================================================\n";
+			cout << "  1. Compute Linear Approximation Table of S-box(es): LAT(S)\n";
+
+			//0 - menuChoice for compute Linear Approximation Table of S-box
+			ReadFromFileComputeNlSboxGPU(infile_exampl, 0);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 2:
+			cout << "\n==========================================================\n";
+			cout << "  2. Linearity: Lin(S)\n";
+
+			//1 - menuChoice for compute Lin of S-box
+			ReadFromFileComputeNlSboxGPU(infile_exampl, 1);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 3:
+			cout << "\n==========================================================\n";
+			cout << "  3. Compute Linear Approximation Table and Linearity: LAT(S), Lin(S)\n";
+
+			//2 - menuChoice for compute Linear Approximation Table and Lin of S-box
+			ReadFromFileComputeNlSboxGPU(infile_exampl, 2);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 4:
+			cout << "\n==========================================================\n";
+			cout << "  4. Nonlinearity: nl(S):\n";
+
+			//3 - menuChoice for compute NL of S-box
+			ReadFromFileComputeNlSboxGPU(infile_exampl, 3);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 5:
+			cout << "\n==========================================================\n";
+			cout << "  5. Autocorrelation Spectra: ACT(S)\n";
+
+			//0 - menuChoice for compute Autocorrelation Spectra of S-box
+			ReadFromFileComputeACSboxGPU(infile_exampl, 0);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 6:
+			cout << "\n==========================================================\n";
+			cout << "  6. Autocorrelation: AC(S)\n";
+
+			//1 - menuChoice for compute AC(S) of S-box
+			ReadFromFileComputeACSboxGPU(infile_exampl, 1);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 7:
+			cout << "\n==========================================================\n";
+			cout << "  7. Compute Autocorrelation spectar and Autocorrelation: ACT(S), AC(S)\n";
+
+			//2 - menuChoice for compute Autocorrelation Spectra and AC(S) of S-box
+			ReadFromFileComputeACSboxGPU(infile_exampl, 2);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 8:
+			cout << "\n==========================================================\n";
+			cout << "  8. Compute Algebraic Normal Form of input S-box(es) \n";
+
+			//0 - menuChoice for compute Algebraic Normal Form of input S-box(es)
+			ReadFromFileComputeANF_degSboxGPU(infile_exampl, 0);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 9:
+			cout << "\n==========================================================\n";
+			cout << "  9. Algebraic degree: deg(S)\n\n";
+
+			//1 - menuChoice for compute deg(S)
+			ReadFromFileComputeANF_degSboxGPU(infile_exampl, 1);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 10:
+			cout << "\n==========================================================\n";
+			cout << "  10. Compute (bitwise) Algebraic Normal Form of input S-box(es) \n";
+
+			//0 - menuChoice for compute (bitwise) Algebraic Normal Form of input S-box(es)
+			ReadFromFileComputeBitwiseANF_degSboxGPU(infile_exampl, 0);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 11:
+			cout << "\n==========================================================\n";
+			cout << "  9. (bitwise) Algebraic degree: deg(S)\n\n";
+
+			//1 - menuChoice for compute (bitwise) deg(S)
+			ReadFromFileComputeBitwiseANF_degSboxGPU(infile_exampl, 1);
+			cout << "\n==========================================================\n";
+			break;
+
+
+		case 12:
+			cout << "\n==========================================================\n";
+			cout << "  10. Compute Component functions: CF(S) \n";
+
+			//Compute Component functions: CF(S) 
+			ReadFromFileComputeCFSboxGPU(infile_exampl);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 13:
+			cout << "\n==========================================================\n";
+			cout << "  11. Compute Difference distribution table: DDT(S) \n";
+
+			//0 - menuChoice for compute Difference distribution table: DDT(S)
+			ReadFromFileComputeDDT_deltaSboxGPU(infile_exampl, 0);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 14:
+			cout << "\n==========================================================\n";
+			cout << "  12. Compute Differential uniformity: delta(S) \n";
+
+			//1 - menuChoice for compute delta(S)
+			ReadFromFileComputeDDT_deltaSboxGPU(infile_exampl, 1);
+			cout << "\n==========================================================\n";
+			break;
+
+		case 15:
+			cout << "\n==========================================================\n";
+			cout << "  Show infilename:\n";
+			readFromFileInputOuput(infile_exampl);
+			cout << "\n==========================================================\n";
+			cout << "\n";
+			system("PAUSE");
+			break;
+
+
+		case 16:
+			cout << "\n==========================================================\n";
+			cout << "   Show outfilename:\n";
+			readFromFileInputOuput(outfile_exampl);
+			cout << "\n==========================================================\n";
+			cout << "\n";
+			system("PAUSE");
+			break;
+
+		case 17:
+			cout << "\n==========================================================\n";
+			cout << "Back to Main menu.";
+			cout << "\n==========================================================\n";
+			break;
+
+		default:
+			cout << "\n==========================================================\n";
+			cout << "\n ==== Please choose from the allowed options! =====";
+			cout << "\n==========================================================\n";
+			break;
+		}
+	} while (choice2 != 17);
+}
+//===============================================================================================

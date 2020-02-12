@@ -1,0 +1,19 @@
+About BSbox-tools: Software for representation, defining and computing the most important cryptographic properties of Boolean and Vector Boolean functions (S-boxes)
+
+Current release: v0.2
+
+What is BSbox-tools?
+
+BSbox-tools is developed software for representation, defining and computing the most important cryptographic properties of Boolean and Vector Boolean functions (S-boxes). 
+For development of this software is use our CUDA oriented library BoolSPLG (Boolean S-box Properties Library for GPUs), a library with parallel algorithms for Boolean functions and S-boxes for GPU. 
+To use this software there is no need knowledge of a programming language. BoolSPL (Boolean S-box parallel library for GPU) provides, reusable software components for every layer of the CUDA programming model. 
+BoolSPLG is a library consisting procedures for analysis and compute cryptographic properties of Boolean and Vector Boolean function (S-box). 
+Our procedures have function for auto grid conﬁguration. Most of the functions are designed to compute the data in registers because they oﬀer the highest bandwidth.
+
+How do I get started using BSbox-tools? 
+
+For the windows user there need to be have install Visual C++ Redistributable Packages for Visual Studio 2013 to be able to run and use the BSbox-tools.
+There is possibility to rebuild the BSbox-tools from the source code. Have in mind that BSbox-tools is developed on Visual Studio 2013. 
+In order to rebuild BSbox-tools you need to have BoolSPL library (v0.2) (BoolSPL is implemented as a C++ header library) and there is timer function that is use from Boost C++ Libraries. 
+
+For more read: About BSbox-tools_v0.2 - "docs" directory

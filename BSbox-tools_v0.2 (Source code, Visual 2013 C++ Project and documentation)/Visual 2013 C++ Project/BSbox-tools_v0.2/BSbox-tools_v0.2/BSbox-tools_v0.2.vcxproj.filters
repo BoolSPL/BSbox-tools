@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainMenuCPU.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeHeader.h">
+      <Filter>Help Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckRequires.h">
+      <Filter>Help Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="InputOutputFiles.h">
+      <Filter>Help Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GenSboxes.h">
+      <Filter>Compute Heders Help Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputePropMenuBoolCPU.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputePropMenuSboxCPU.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="FindMenuBoolCPU.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="FindMenuSboxCPU.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="func_Boolean_CPU.h">
+      <Filter>FunctionPropertiesCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpBoolFunctionCPU.h">
+      <Filter>FunctionPropertiesCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="GenBoolean.h">
+      <Filter>Compute Heders Help Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpSboxFunctionCPU.h">
+      <Filter>FunctionPropertiesCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="2D_DynamicArray.h">
+      <Filter>Help Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="funct_Sbox_CPU.h">
+      <Filter>FunctionPropertiesCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpFindBoolFunctionCPU.h">
+      <Filter>FunctionPropertiesCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpFindSboxFunctionCPU.h">
+      <Filter>FunctionPropertiesCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="CUDA_Properties_menu.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputePropMenuBoolGPU.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpBoolFunctionGPU.h">
+      <Filter>FunctionPropertiesCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputePropMenuSboxGPU.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpSboxFunctionGPU.h">
+      <Filter>FunctionPropertiesCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="FindMenuBoolGPU.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpFindBoolFunctionGPU.h">
+      <Filter>FunctionPropertiesCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="FindMenuSboxGPU.h">
+      <Filter>Menu Heders</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpFindSboxFunctionGPU.h">
+      <Filter>FunctionPropertiesCPU</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Menu Heders">
+      <UniqueIdentifier>{ae7a5b3d-fecb-4677-a305-5bb832f3db54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Help Headers">
+      <UniqueIdentifier>{5130f0bc-c5f4-499b-8526-aed3185a2c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compute Heders Help Functions">
+      <UniqueIdentifier>{3e570134-ef5a-4657-8ead-5ce5670d15a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FunctionPropertiesCPU">
+      <UniqueIdentifier>{ad6afc9d-4381-4d18-9dd0-a77ae9d45700}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
