@@ -75,9 +75,9 @@ Output file will contain result from computing cryptographic properties of Boole
 
 For the windows user there need to be have install <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">Visual C++ Redistributable Packages for Visual Studio 2013</a> to be able to run and use the BSbox-tools.
 
-There is possibility to rebuild the BSbox-tools from the source code. Have in mind that BSbox-tools is developed on Visual Studio 2013. In order to rebuild BSbox-tools you need to have BoolSPL library (v0.2) (BoolSPL is implemented as a C++ header library) and there is timer function that is use from <a href="https://www.boost.org/">Boost C++ Libraries</a>. 
+There is possibility to rebuild the BSbox-tools from the source code. Have in mind that BSbox-tools is developed on Visual Studio 2013. In order to rebuild BSbox-tools you need to have <a href="https://github.com/BoolSPL/BoolSPL-CUDA-Library">BoolSPL library</a> (v0.2) (BoolSPL is implemented as a CUDA C header library) and there is timer function that is use from <a href="https://www.boost.org/">Boost C++ Libraries</a>. 
 
-###Reference and Publications related to the BSbox-tools 
+### Reference and Publications related to the BSbox-tools 
 
 [1] D. Bikov and I. Bouyukliev, BoolSPLG: A library with parallel algorithms for Boolean functions and S-boxes for GPU, preprint.
 
